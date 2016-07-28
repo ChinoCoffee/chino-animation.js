@@ -101,7 +101,7 @@ window.onload = function() {
     chino.render();
   });
 
-  $.getJSON("/references/facial-expressions.json", function(data) {
+  $.getJSON("references/facial-expressions.json", function(data) {
     chino.addExpression('angry', data['chino-bezier-angry.svg']);
     chino.addExpression('eyes-shut', data['chino-bezier-eyes-shut.svg']);
     chino.addExpression('sad', data['chino-bezier-sad.svg']);
