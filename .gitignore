@@ -1,0 +1,4 @@
+*.DS_STORE
+.project
+node_modules/*
+!*.gitkeep
