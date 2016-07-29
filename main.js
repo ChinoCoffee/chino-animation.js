@@ -36,9 +36,9 @@ function CharacterConfig() {
   this.durationBlink = 3.0;
   this.keyframeBlink = [
     {x:0,    y:0,   l: 0,    r:0},
-    {x:0.61, y:0,   l:-0.04, r:0.04},
-    {x:0.65, y:1.0, l:-0.04, r:0.04},
-    {x:0.69, y:0,   l:-0.04, r:0.04},
+    {x:0.62, y:0,   l:-0.03, r:0.03},
+    {x:0.65, y:1.0, l:-0.03, r:0.03},
+    {x:0.68, y:0,   l:-0.03, r:0.03},
     {x:1.0,  y:0,   l:-0.25, r:0},
   ];
 }
@@ -95,6 +95,7 @@ window.onload = function() {
   window.chino = chino;
   var canvas = document.getElementById('canvas');
   paper.setup(canvas);
+  extendPathFunctions();
 
   paper.project.importSVG('references/chino-bezier-peace.svg', function(svg) {
     chino.loadBaseTemplate();
