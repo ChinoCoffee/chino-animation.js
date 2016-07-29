@@ -6,9 +6,9 @@ Rendering Chino (a character in [Is the order a rabbit?](http://www.gochiusa.com
 
 This repository includes portions of [Bezier.js](https://github.com/Pomax/bezierjs) by [Pomax](https://github.com/Pomax), which is MIT licensed.
 
-### facial-expressions.json
+### Generating facial-expressions.json
 
 ```sh
-$ cd util/
+$ cd utils/
 $ ./make_facial_expressions.sh
 ```
