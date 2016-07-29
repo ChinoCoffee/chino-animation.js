@@ -95,7 +95,6 @@ window.onload = function() {
   window.chino = chino;
   var canvas = document.getElementById('canvas');
   paper.setup(canvas);
-  extendPathFunctions();
 
   paper.project.importSVG('references/chino-bezier-peace.svg', function(svg) {
     chino.loadBaseTemplate();
@@ -103,6 +102,7 @@ window.onload = function() {
   });
 
   $.getJSON("references/facial-expressions.json", function(data) {
+    extendPathFunctions();
     chino.addExpression('angry', data['chino-bezier-angry.svg']);
     chino.addExpression('eyes-shut', data['chino-bezier-eyes-shut.svg']);
     chino.addExpression('sad', data['chino-bezier-sad.svg']);
